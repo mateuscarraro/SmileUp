@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section.section-global,
+body {
+    min-height: 100vh;
+    width: 100%;
+} 
+
+section.section-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #e9f0f9;
+}
+
+.sec-1 {
+    width: 100%;
+    max-width: 1100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sec-1 .image-logo img {
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+}
+
+.sec-1 .title h1,
+.sec-1 .text-slogan p,
+.sec-1 .start a {
+    font-family: 'Lato', sans-serif;
+}
+
+.sec-1 .title h1 {
+    font-size: 42px;
+    margin-top: -50px;
+    color: #4868b1;
+}
+
+.sec-1 .text-slogan p {
+    font-size: 26px;
+    margin-top: -15px;
+    min-height: 60px;
+}
+
+.sec-1 .start a {
+    background-image: none;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    color: #53b7e8;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border-style: solid;
+    margin: 0 auto;
+}
+
+.sec-1 .start a:hover {
+    border: solid #51a9de;
+    background-color: #53b7e8; 
+    transition: 0.4s;
+    color: white;
+}
+
+@media only screen and (min-width:320px) and (max-width: 480px) {
+    .sec-1 .image-logo img {
+        width: 200px;
+        height: 200px;
+        margin-top: -100px;
+    }
+
+    .sec-1 .title h1 {
+        font-size: 32px;
+        margin-top: -25px;
+    }
+
+    .sec-1 .text-slogan p {
+        font-size: 24px;
+        min-height: 60px;
+    }
+}

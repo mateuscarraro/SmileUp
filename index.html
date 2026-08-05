@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SmileUp</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <link rel="shortcut icon" href="img/dente.png">
+    </head>
+    <body>
+        <section class="section-global">
+            <div class="container">
+                <div class="sec-1">
+                    <div class="image-logo">
+                        <img src="img/dente-logo.png">
+                    </div>
+                    <div class="title">
+                        <h1>SmileUp</h1>
+                    </div>
+                    <div class="text-slogan">
+                        <p>Vamos juntos cuidar do sorriso do seu filho?</p>
+
+                        <script>
+                                function typeWrite(elemento) {
+                                    const textoArray = elemento.innerHTML.split('');
+                                    elemento.innerHTML = '';
+
+                                    textoArray.forEach((letra, i) => {
+                                        setTimeout(() => elemento.innerHTML += letra, 75 * i);
+                                        console.log(i);
+                                    });
+                                }
+
+                                const titulo = document.querySelector('p')
+                                typeWrite(titulo);
+                        </script>
+                        
+                    </div>
+                    <div class="btn start">
+                        <a href="#">Começar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
