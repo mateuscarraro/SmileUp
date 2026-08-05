@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SmileUp</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <link rel="shortcut icon" href="img/dente.png">
+    </head> 
+    <header>
+        <section class="header-logo-menu">
+            <div class="container">
+                <h1 class="title">Menu</h1>
+            </div>
+        </section>
+    </header>
+    <body>
+        <section class="global-section">
+            <div class="container">
+                <div class="sec-1">
+                    <div class="text-slogan">
+                        <p>O que você deseja?</p>
+                    </div>
+
+                    <script>
+                                function typeWrite(elemento) {
+                                    const textoArray = elemento.innerHTML.split('');
+                                    elemento.innerHTML = '';
+
+                                    textoArray.forEach((letra, i) => {
+                                        setTimeout(() => elemento.innerHTML += letra, 75 * i);
+                                        console.log(i);
+                                    });
+                                }
+
+                                const titulo = document.querySelector('p')
+                                typeWrite(titulo);
+                    </script>
+
+                </div>
+                <div class="sec-2">
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/escova-de-dente.png">
+                        </div>
+                        <div class="texts-card">
+                            <h4>Como escovar os dentes</h4>
+                            <p>Aprenda o jeito certo de escovar</p>
+                        </div>
+                        <div class="link">
+                            <a href="#">></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/triste.png">
+                        </div>
+                        <div class="texts-card">
+                            <h4>Meu filho não quer escovar</h4>
+                            <p>Estratégias para facilitar esse momento</p>
+                        </div>
+                        <div class="link">
+                            <a href="#">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

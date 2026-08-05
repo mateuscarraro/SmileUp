@@ -7,6 +7,8 @@
     margin: 0 auto;
 }
 
+/* TELA DE INDEX */
+
 section.section-global,
 body {
     min-height: 100vh;
@@ -84,7 +86,120 @@ body {
     color: white;
 }
 
+/* TELA DE  MENU */
+
+.header-logo-menu {
+    width: 100%;
+}
+
+.header-logo-menu .container h1 {
+    font-size: 42px;
+    color: #4868b1;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.sec-2 {
+    width: 100%;
+    max-width: 1100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    width: 550px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+    margin-bottom: 50px;
+    position: relative;
+    opacity: 0.8;
+    box-shadow: 0px 6px 16px -5px rgba(168, 168, 168, 0.41);
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+.card .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e9f0f9;
+    margin-left: 20px;
+    margin-right: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .image img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.card .link {
+    margin-left: auto;
+    height: 100%;
+    width: 75px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card .link a {
+    height: 100%;
+    width: 75px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #4868b1;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.card .texts-card {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Lato', sans-serif;
+    width: 300px;
+    height: 130px;
+    margin-left: 30px;
+}
+
+.card .texts-card h4 {
+    font-size: 24px;
+    margin-bottom: 0;
+    text-align: left;
+    top: -20px;
+    position: relative;
+    color: #4868b1;
+}
+
+.card .texts-card p {
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: left;
+    bottom: 10px;
+    position: relative;
+}
+
 @media only screen and (min-width:220px) and (max-width: 480px) {
+
+    .container {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+    }
+
+    /* TELA DE INDEX */
+
     .sec-1 .image-logo img {
         width: 200px;
         height: 200px;
@@ -101,5 +216,39 @@ body {
         min-height: 60px;
         margin-left: 15px;
         margin-right: 15px;
+    }
+
+    /* TELA DE  MENU */
+    
+    .card {
+        width: 100%;
+        max-width: 550px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .card .image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .card .texts-card {
+        width: calc(100% - 200px);
+    }
+
+    .card .texts-card h4 {
+        font-size: 18px;
+    }
+
+    .card .texts-card p {
+        font-size: 12px;
+    }
+
+    .header-logo-menu .container h1 {
+        font-size: 32px;
+    }
+    
+    .global-section .container .sec-1 .text-slogan p{
+        font-size: 22px;
     }
 }
